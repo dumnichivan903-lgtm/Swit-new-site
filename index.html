@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d0c">
+  <meta name="description" content="SWIT — выкуп и доставка брендовых вещей из Китая в Европу.">
+  <title>SWIT — выкуп вещей из Китая</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800;900&display=swap');
+    :root{--bg:#090b0a;--panel:#111512;--panel2:#171d19;--line:#29332c;--text:#f3f7f3;--muted:#a0aaa2;--lime:#c5ff45;--lime2:#a8e52e}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid #202721}.logo{font-size:27px;font-weight:900;letter-spacing:3px}.logo span{color:var(--lime)}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}.pill,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;padding:12px 18px;font-weight:800}.pill{border:1px solid var(--line);font-size:13px}.btn{background:var(--lime);color:#10140c;border:0;cursor:pointer}.btn:hover{background:var(--lime2)}.hero{padding:82px 0 70px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}.eyebrow{color:var(--lime);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-2.5px;margin:18px 0}.hero h1 span{color:var(--lime)}.lead{color:var(--muted);font-size:18px;max-width:560px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.outline{border:1px solid var(--line);background:transparent;color:var(--text)}.visual{min-height:340px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 70% 25%,#354b1c 0,transparent 34%),linear-gradient(145deg,#1b241c,#0e110f 65%);padding:28px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}.visual-mark{font-size:clamp(76px,12vw,130px);font-weight:950;letter-spacing:-9px;color:var(--lime);line-height:1}.visual-bottom{display:flex;justify-content:space-between;align-items:end;color:var(--muted);font-size:13px}.visual-bottom strong{color:white;font-size:18px}.section{padding:64px 0}.section-head{margin-bottom:26px}.section h2{font-size:clamp(29px,4vw,42px);letter-spacing:-1px;margin:8px 0}.muted{color:var(--muted)}.steps,.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tile{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}.num{color:var(--lime);font-size:13px;font-weight:900}.tile h3{margin:10px 0 6px}.tile p{margin:0;color:var(--muted);font-size:14px}.calc-layout{display:grid;grid-template-columns:1fr .85fr;gap:18px}.calc,.result{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field label{display:block;color:var(--muted);font-size:13px;margin-bottom:7px}.field input{width:100%;background:#090d0a;border:1px solid var(--line);border-radius:10px;padding:14px;color:white;font:inherit;outline:none}.field input:focus{border-color:var(--lime)}.hint{font-size:12px;color:var(--muted);margin-top:6px}.total-label{color:var(--muted);font-size:14px}.total{font-size:clamp(40px,6vw,58px);font-weight:900;letter-spacing:-2px;color:var(--lime);margin:4px 0 14px}.breakdown{border-top:1px solid var(--line);padding-top:14px;font-size:14px}.line{display:flex;justify-content:space-between;gap:12px;margin:9px 0;color:var(--muted)}.line strong{color:var(--text)}.result .btn{width:100%;margin-top:18px}.notice{font-size:12px;color:var(--muted);margin-top:12px}.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;background:linear-gradient(130deg,#192217,#101511);border:1px solid var(--line);border-radius:20px;padding:30px}.footer{border-top:1px solid #202721;padding:24px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    /* SWIT signature motion */
+    :root{--lime:#caff4d;--lime2:#a9ed25}
+    body{font-family:Manrope,Inter,Arial,sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 15% 12%,rgba(160,210,72,.08),transparent 32%),radial-gradient(ellipse at 85% 55%,rgba(72,120,54,.07),transparent 35%)}
+    .progress{position:fixed;z-index:30;left:0;top:0;height:3px;width:0;background:var(--lime);box-shadow:0 0 16px var(--lime)}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(9,11,10,.84);backdrop-filter:blur(18px);padding:15px 0}
+    .logo{transition:letter-spacing .3s,transform .3s}.logo:hover{letter-spacing:5px;transform:translateY(-2px)}
+    .pill,.btn{position:relative;overflow:hidden;isolation:isolate;transition:transform .22s ease,box-shadow .22s ease,background .22s ease}
+    .btn:hover,.pill:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(202,255,77,.16)}
+    .btn:active,.pill:active{transform:scale(.96)}
+    .btn:after{content:"";position:absolute;inset:-40% auto -40% -60%;width:35%;transform:skewX(-22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.42),transparent);transition:left .6s ease;z-index:-1}.btn:hover:after{left:130%}
+    .hero{min-height:570px;position:relative}.hero>div:first-child{animation:rise .8s both}.hero h1{animation:rise .9s .08s both}.lead{animation:rise .9s .16s both}.actions{animation:rise .9s .24s both}
+    .eyebrow{font-family:"DM Mono",monospace}
+    .visual{position:relative;isolation:isolate;box-shadow:0 25px 90px rgba(0,0,0,.25);animation:float 6s ease-in-out infinite,fadeIn 1s .2s both}
+    .visual:before{content:"";position:absolute;inset:-50%;z-index:-1;background:conic-gradient(from 0deg,transparent 0 65%,rgba(202,255,77,.18),transparent 78%);animation:spin 12s linear infinite}
+    .visual:after{content:"";position:absolute;width:190px;height:190px;border:1px solid rgba(202,255,77,.22);border-radius:50%;right:-55px;top:-60px;box-shadow:0 0 0 22px rgba(202,255,77,.025),0 0 0 48px rgba(202,255,77,.018);pointer-events:none}
+    .visual-mark{text-shadow:0 0 42px rgba(202,255,77,.2);animation:markPulse 4s ease-in-out infinite;letter-spacing:-2px;display:inline-block;max-width:100%;white-space:nowrap}
+    .tile,.calc,.result{transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}.tile{position:relative;overflow:hidden}
+    .tile:before{content:"";position:absolute;inset:0;background:linear-gradient(125deg,rgba(202,255,77,.075),transparent 45%);opacity:0;transition:opacity .3s}
+    .tile:hover{transform:translateY(-7px);border-color:rgba(202,255,77,.55);box-shadow:0 18px 45px rgba(0,0,0,.24),0 0 28px rgba(202,255,77,.06)}.tile:hover:before{opacity:1}
+    .tile h3,.tile p,.tile .num{position:relative}.features .tile:nth-child(1){background:linear-gradient(145deg,#171d19,#111512)}.features .tile:nth-child(2){background:linear-gradient(145deg,#1b211b,#111512)}.features .tile:nth-child(3){background:linear-gradient(145deg,#20251a,#111512)}
+    .platform-brand{height:74px;display:flex;align-items:center;gap:13px;margin-bottom:14px}
+    .brand-symbol{width:62px;height:62px;display:grid;place-items:center;flex:0 0 62px;border-radius:18px;font-weight:950;letter-spacing:-2px;font-size:21px;box-shadow:0 8px 26px rgba(0,0,0,.24);transition:transform .35s cubic-bezier(.2,.8,.2,1),filter .35s}
+    .tile:hover .brand-symbol{transform:rotate(-7deg) scale(1.09);filter:drop-shadow(0 0 13px rgba(255,255,255,.12))}
+    .brand-pdd{background:linear-gradient(145deg,#ff6848,#e72d35);color:#fff;border-radius:50% 50% 46% 46%}
+    .brand-tao{background:linear-gradient(145deg,#ffb33b,#ff6b19);color:#fff;border-radius:17px;font-size:26px}
+    .brand-1688{background:linear-gradient(145deg,#ff7b37,#ed3e24);color:#fff;border-radius:17px;font-size:23px;letter-spacing:-2.5px}
+    .brand-caption{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:1.5px;color:var(--muted)}
+    .num{font-family:"DM Mono",monospace}.field input{transition:border-color .2s,box-shadow .2s,transform .2s}.field input:focus{border-color:var(--lime);box-shadow:0 0 0 3px rgba(202,255,77,.1);transform:translateY(-1px)}
+    .total{transition:transform .18s,text-shadow .18s}.total.bump{transform:scale(1.045);text-shadow:0 0 24px rgba(202,255,77,.35)}
+    .contact{position:relative;overflow:hidden}.contact:after{content:"SWIT";position:absolute;right:-10px;bottom:-80px;font-size:clamp(110px,20vw,220px);font-weight:900;letter-spacing:-14px;color:rgba(202,255,77,.035);pointer-events:none}.contact>*{position:relative;z-index:1}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+    .ripple{position:absolute;border-radius:50%;transform:scale(0);background:rgba(255,255,255,.45);animation:ripple .55s linear;pointer-events:none}
+    .footer span:last-child{font-family:"DM Mono",monospace}
+    @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes markPulse{0%,100%{text-shadow:0 0 24px rgba(202,255,77,.12)}50%{text-shadow:0 0 48px rgba(202,255,77,.36)}}@keyframes ripple{to{transform:scale(4);opacity:0}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+    @media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:55px 0 45px;gap:25px}.visual{min-height:230px}.steps,.features,.calc-layout,.contact{grid-template-columns:1fr}.fields{grid-template-columns:1fr 1fr}.section{padding:45px 0}}
+    @media(max-width:420px){.wrap{width:min(100% - 28px,1120px)}.fields{grid-template-columns:1fr}.calc,.result{padding:18px}.visual-mark{font-size:clamp(64px,18vw,96px);letter-spacing:-1px}}
+
+    /* SWIT RED EDITION — black / crimson visual identity */
+    :root{--lime:#ff303b;--lime2:#ff5961;--bg:#080809;--panel:#111113;--panel2:#19191c;--line:#343036;--text:#f7f5f5;--muted:#aaa4a7;--red:#ff303b;--redGlow:rgba(255,48,59,.24)}
+    body{background:#080809;background-image:radial-gradient(ellipse at 12% 8%,rgba(255,35,48,.12),transparent 28%),radial-gradient(ellipse at 90% 48%,rgba(155,12,28,.10),transparent 32%);}
+    body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.12;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+    .eyebrow,.logo span,.num,.visual-mark,.total{color:var(--red)!important}
+    .btn{background:linear-gradient(110deg,#ff303b,#d91028)!important;color:#fff!important;box-shadow:0 7px 24px rgba(255,35,50,.13)}
+    .btn:hover,.pill:hover{box-shadow:0 12px 34px rgba(255,35,50,.28)!important}
+    .btn:after{background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent)}
+    .nav{border-bottom-color:#302126}
+    .visual{background:radial-gradient(circle at 72% 24%,#5a111b 0,transparent 38%),linear-gradient(145deg,#211316,#0d0d0f 68%);border-color:#4a2429}
+    .visual:before{background:conic-gradient(from 0deg,transparent 0 62%,rgba(255,48,59,.35),transparent 78%)}
+    .visual:after{border-color:rgba(255,48,59,.35);box-shadow:0 0 0 22px rgba(255,48,59,.04),0 0 0 48px rgba(255,48,59,.025)}
+    .visual-mark{text-shadow:0 0 44px rgba(255,48,59,.32)!important}
+    .tile:hover{border-color:rgba(255,48,59,.7)!important;box-shadow:0 18px 45px rgba(0,0,0,.3),0 0 30px rgba(255,48,59,.09)!important}
+    .tile:before{background:linear-gradient(125deg,rgba(255,48,59,.12),transparent 48%)}
+    .features .tile:nth-child(1),.features .tile:nth-child(2),.features .tile:nth-child(3){background:linear-gradient(145deg,#211619,#111113)}
+    .field input:focus{border-color:var(--red)!important;box-shadow:0 0 0 3px rgba(255,48,59,.14)!important}
+    .contact{background:linear-gradient(130deg,#2b1419,#111113)!important;border-color:#4b252b}
+    .contact:after{color:rgba(255,48,59,.055)}
+    .delivery-timing{background:linear-gradient(110deg,#2b1419,#111113)!important;border-color:rgba(255,48,59,.35)!important}
+    .brand-pdd{box-shadow:0 8px 28px rgba(255,48,59,.18)}
+    .progress{background:linear-gradient(90deg,#a90018,#ff4650)!important;box-shadow:0 0 16px rgba(255,48,59,.7)!important}
+    .ripple{background:rgba(255,95,105,.45)}
+    .pill{border-color:#493037}
+    .calc,.result{border-color:#38272b}
+    /* Extra motion: animated red edge, hover tilt, and click pulse */
+    .visual,.calc,.result,.contact{position:relative;isolation:isolate}
+    .visual,.calc,.result{transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+    .calc:hover,.result:hover{transform:translateY(-4px);border-color:rgba(255,48,59,.48);box-shadow:0 18px 48px rgba(0,0,0,.3),0 0 24px rgba(255,48,59,.07)}
+    .btn:active{filter:brightness(1.15);box-shadow:0 0 0 5px rgba(255,48,59,.12)!important}
+    .section-head .eyebrow:after{content:" / SWIT";color:#71666a;letter-spacing:1px}
+    .tile{animation:cardEnter .7s both;animation-delay:calc(var(--i,0)*90ms)}
+    .steps .tile:nth-child(2),.features .tile:nth-child(2){--i:1}.steps .tile:nth-child(3),.features .tile:nth-child(3){--i:2}
+    @keyframes cardEnter{from{opacity:0;transform:translateY(22px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+    @keyframes redPulse{0%,100%{box-shadow:0 0 0 0 rgba(255,48,59,0)}50%{box-shadow:0 0 0 8px rgba(255,48,59,.035)}}
+    .visual{animation:float 5s ease-in-out infinite,fadeIn 1s .2s both,redPulse 4s ease-in-out infinite}
+    @media(max-width:760px){.hero{gap:28px}.visual{min-height:260px}.visual-mark{font-size:clamp(68px,18vw,112px)}}
+    @media(prefers-reduced-motion:reduce){.visual,.tile{animation:none!important}}
+
+  
+    .order-panel{display:grid;grid-template-columns:1fr .72fr;gap:20px;background:linear-gradient(145deg,#191215,#101012);border:1px solid #47232a;border-radius:20px;padding:24px}
+    .order-form{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+    .order-form .field.full{grid-column:1/-1}
+    .order-form select,.order-form textarea{width:100%;background:#09090b;border:1px solid #393036;border-radius:10px;padding:13px;color:#f7f5f5;font:inherit;outline:none}
+    .order-form select:focus,.order-form textarea:focus{border-color:#ff303b;box-shadow:0 0 0 3px rgba(255,48,59,.13)}
+    .order-side{border:1px solid #39252a;border-radius:15px;padding:20px;background:rgba(255,48,59,.045)}
+    .order-side .big{font-size:42px;font-weight:900;color:#ff303b;line-height:1.1;margin:10px 0}
+    .order-form button{grid-column:1/-1;width:100%}
+    @media(max-width:760px){.order-panel{grid-template-columns:1fr;padding:16px}.order-form{grid-template-columns:1fr}.order-form .field.full{grid-column:auto}}
+
+  </style>
+</head>
+<body>
+  <div class="progress" id="scrollProgress"></div>
+  <header class="wrap nav">
+    <a class="logo" href="#top">SW<span>I</span>T</a>
+    <nav class="navlinks"><a href="#platforms">Площадки</a><a href="#how">Как это работает</a><a href="#calculator">Калькулятор</a><a href="#order">Заявка</a><a href="#contact">Контакты</a></nav>
+    <a class="pill" href="#order">Оформить заявку ↗</a>
+  </header>
+  <main id="top">
+    <section class="wrap hero">
+      <div><div class="eyebrow">Pinduoduo · Taobao · 1688 · Europe</div><h1>ТВОИ ВЕЩИ.<br><span>НАШ ВЫКУП.</span></h1><p class="lead">Выкупаем товары с китайских площадок Pinduoduo, Taobao и 1688 и организуем доставку в Европу. Рассчитай примерную стоимость заранее.</p><div class="actions"><a class="btn" href="#calculator">Рассчитать заказ</a><a class="btn outline" href="https://t.me/SWITSELLER" target="_blank" rel="noopener">Написать в Telegram</a></div></div>
+      <div class="visual"><div class="eyebrow">SWIT / 001</div><div class="visual-mark">SWIT</div><div class="visual-bottom"><div><strong>BUYOUT SERVICE</strong><br>China → Europe</div><div>EST. 2026</div></div></div>
+    </section>
+    <section class="wrap section" id="platforms"><div class="section-head"><div class="eyebrow">Где выкупаем</div><h2>Три площадки — один сервис</h2><p class="muted">Помогаем оформить выкуп товаров с популярных китайских маркетплейсов.</p></div><div class="features"><article class="tile"><div class="platform-brand"><div class="brand-symbol brand-pdd">拼</div><div><div class="brand-caption">CHINA MARKETPLACE</div><div class="num">01 / PINDUODUO</div></div></div><h3>Pinduoduo</h3><p>Выкуп товаров и выгодных предложений с Pinduoduo.</p></article><article class="tile"><div class="platform-brand"><div class="brand-symbol brand-tao">淘</div><div><div class="brand-caption">CHINA MARKETPLACE</div><div class="num">02 / TAOBAO</div></div></div><h3>Taobao</h3><p>Помощь с заказом одежды, обуви, аксессуаров и других товаров.</p></article><article class="tile"><div class="platform-brand"><div class="brand-symbol brand-1688">1688</div><div><div class="brand-caption">WHOLESALE MARKET</div><div class="num">03 / 1688</div></div></div><h3>1688</h3><p>Выкуп товаров у продавцов и поставщиков на 1688.</p></article></div><p class="notice">Для оформления отправь нам ссылку на товар, нужный размер, цвет и количество. Возможность выкупа и итоговую стоимость подтвердим перед оплатой.</p></section>
+    <section class="wrap section" id="how"><div class="section-head"><div class="eyebrow">Просто и понятно</div><h2>Как это работает</h2><p class="muted">Всего три шага от ссылки до получения заказа.</p></div><div class="steps"><article class="tile"><div class="num">01 / ССЫЛКА</div><h3>Отправляешь товар</h3><p>Присылаешь ссылку на вещь, размер и нужный цвет.</p></article><article class="tile"><div class="num">02 / ВЫКУП</div><h3>Считаем и выкупаем</h3><p>Уточняем итоговую стоимость и после согласования оформляем выкуп.</p></article><article class="tile"><div class="num">03 / ДОСТАВКА</div><h3>Получаешь заказ</h3><p>Организуем доставку и сообщаем информацию по отправлению.</p></article></div><div class="tile delivery-timing" style="margin-top:16px;display:flex;gap:16px;align-items:center;background:linear-gradient(110deg,#1b2617,#111512);border-color:rgba(255,48,59,.32)"><div class="brand-symbol" style="flex:0 0 58px;width:58px;height:58px;border-radius:16px;background:rgba(255,48,59,.13);color:var(--red);display:grid;place-items:center;font-size:27px">↗</div><div><div class="num">СРОКИ ДОСТАВКИ</div><h3 style="margin:4px 0">12–17 дней до Европы</h3><p>Ориентировочный срок доставки — 12–17 дней после поступления товара на наш склад в Китае.</p></div></div></section>
+    <section class="section" id="calculator"><div class="wrap"><div class="section-head"><div class="eyebrow">Price calculator</div><h2>Калькулятор стоимости</h2><p class="muted">Измени значения — итог пересчитается автоматически.</p></div><div class="calc-layout"><div class="calc"><div class="fields"><div class="field"><label for="yuan">Цена товара (¥)</label><input id="yuan" type="number" inputmode="decimal" min="0" step="0.01" value="200"></div><div class="field"><label for="rate">Курс 1 юаня (€)</label><input id="rate" type="number" inputmode="decimal" min="0" step="0.0001" value="0.13"></div><div class="field"><label for="fee">Комиссия (€)</label><input id="fee" type="number" inputmode="decimal" min="0" step="0.01" value="5"></div><div class="field"><label for="weight">Вес посылки (кг)</label><input id="weight" type="number" inputmode="decimal" min="0" step="0.01" value="1"></div></div><p class="hint">Для предварительного расчёта указано 17 € за 1 кг. Важно: тариф доставки зависит от страны назначения, поэтому точную стоимость мы подтвердим отдельно. Чтобы узнать цену доставки, напиши нам страну назначения и примерный вес посылки в кг.</p></div><div class="result"><div class="total-label">Предварительная сумма</div><div class="total" id="total">€39.00</div><div class="breakdown"><div class="line"><span>Стоимость товара</span><strong id="goods">€26.00</strong></div><div class="line"><span>Комиссия</span><strong id="feeOut">€5.00</strong></div><div class="line"><span>Вес посылки</span><strong id="weightOut">1 кг</strong></div><div class="line"><span>Доставка (17 €/кг)</span><strong id="shipOut">€17.00</strong></div><div class="line"><span>Страна доставки</span><strong>Уточняется в Telegram</strong></div><div class="line"><span>Формула</span><strong>Товар + комиссия + доставка</strong></div></div><button class="btn" id="copyOrder" type="button">Скопировать расчёт</button><div class="notice" id="copyStatus" aria-live="polite">Важно: тариф зависит от страны назначения и веса. Напиши нам страну и примерный вес посылки в кг — уточним стоимость доставки. Расчёт выше предварительный.</div></div></div></div></section>
+
+    <section class="wrap section" id="order">
+      <div class="section-head"><div class="eyebrow">Start your order</div><h2>Оформить заявку</h2><p class="muted">Заполни данные о товаре и обязательно оставь свой Telegram username — заявка автоматически придёт нам в Telegram, и мы сможем тебе ответить.</p></div>
+      <div class="order-panel">
+        <form class="order-form" id="orderForm">
+          <div class="field"><label for="customerName">Твоё имя</label><input id="customerName" name="name" placeholder="Как к тебе обращаться" required></div>
+          <div class="field"><label for="telegramUsername">Твой Telegram username</label><input id="telegramUsername" name="telegram" placeholder="@username" pattern="@?[A-Za-z0-9_]{5,32}" required><small class="muted">Обязательно укажи username, чтобы мы могли ответить тебе.</small></div>
+          <div class="field"><label for="country">Страна доставки</label><input id="country" name="country" placeholder="Например, Германия" required></div>
+          <div class="field"><label for="platform">Площадка</label><select id="platform" name="platform"><option>Pinduoduo</option><option>Taobao</option><option>1688</option></select></div>
+          <div class="field"><label for="quantity">Количество</label><input id="quantity" name="quantity" type="number" min="1" step="1" value="1" required></div>
+          <div class="field full"><label for="productLink">Ссылка на товар</label><input id="productLink" name="link" type="url" placeholder="https://..." required></div>
+          <div class="field"><label for="sizeColor">Размер / цвет</label><input id="sizeColor" name="size" placeholder="Например, L / чёрный"></div>
+          <div class="field"><label for="estimatedWeight">Примерный вес (кг)</label><input id="estimatedWeight" name="weight" type="number" min="0" step="0.1" placeholder="Например, 1.5"></div>
+          <div class="field full"><label for="extra">Комментарий (необязательно)</label><textarea id="extra" name="extra" rows="3" placeholder="Дополнительные пожелания"></textarea></div>
+          <button class="btn" id="submitOrder" type="submit">Отправить заявку ↗</button><p class="muted" id="formStatus" role="status" aria-live="polite" style="grid-column:1/-1"></p>
+        </form>
+        <aside class="order-side"><div class="eyebrow">SWIT / ORDER REQUEST</div><div class="big">01—03</div><h3>Три шага до выкупа</h3><p class="muted">1. Заполни форму и укажи свой Telegram username.<br>2. Нажми «Отправить заявку».<br>3. Заявка автоматически придёт менеджеру SWIT в Telegram.</p><p class="notice">Заявка не оформляет покупку автоматически. Выкуп подтверждается после согласования цены и условий.</p></aside>
+      </div>
+    </section>
+    <section class="wrap section" id="contact"><div class="contact"><div><div class="eyebrow">Доставка по странам</div><h2>Узнай точную стоимость доставки</h2><p class="muted">Стоимость доставки зависит от страны назначения и веса посылки. Напиши нам два пункта: страну, куда нужно отправить заказ, и примерный вес посылки в килограммах. Мы проверим тариф и сообщим стоимость до оформления выкупа.</p></div><div><p class="muted">Для расчёта доставки отправь нам:
+1. Страну назначения
+2. Примерный вес посылки (кг)
+При желании сразу приложи ссылку на товар.</p><a class="btn" href="https://t.me/SWITSELLER" target="_blank" rel="noopener">Уточнить доставку в Telegram</a></div></div></section>
+  </main>
+  <footer class="wrap footer"><span>© 2026 SWIT. All rights reserved.</span><span>Pinduoduo · Taobao · 1688 · Europe</span></footer>
+  <script>
+    (() => {
+      const revealTargets = document.querySelectorAll('.section-head,.tile,.calc,.result,.contact');
+      revealTargets.forEach(node => node.classList.add('reveal'));
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+        }), {threshold:.12});
+        revealTargets.forEach(node => observer.observe(node));
+      } else revealTargets.forEach(node => node.classList.add('visible'));
+      const progress = document.getElementById('scrollProgress');
+      const updateProgress = () => { const max=document.documentElement.scrollHeight-window.innerHeight; progress.style.width=(max>0?window.scrollY/max*100:0)+'%'; };
+      window.addEventListener('scroll',updateProgress,{passive:true}); updateProgress();
+      document.querySelectorAll('.btn,.pill').forEach(button => button.addEventListener('click',event => {
+        const rect=button.getBoundingClientRect(), ripple=document.createElement('span'), size=Math.max(rect.width,rect.height)*.55;
+        ripple.className='ripple'; ripple.style.width=ripple.style.height=size+'px';
+        ripple.style.left=(event.clientX-rect.left-size/2)+'px'; ripple.style.top=(event.clientY-rect.top-size/2)+'px';
+        button.appendChild(ripple); window.setTimeout(()=>ripple.remove(),600);
+      }));
+      const ids = ['yuan','rate','fee','weight'];
+      const el = Object.fromEntries(ids.map(id => [id, document.getElementById(id)]));
+      const euro = n => new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'}).format(Number.isFinite(n)?n:0);
+      const number = id => { const v = Number(String(el[id].value).replace(',','.')); return Number.isFinite(v) && v >= 0 ? v : 0; };
+      const shippingPerKg = 17;
+      let current = {yuan:200,rate:.13,fee:5,weight:1,shipping:17,total:48,goods:26};
+      function calculate(){
+        const yuan=number('yuan'), rate=number('rate'), fee=number('fee'), weight=number('weight');
+        const goods=yuan*rate, shipping=weight*shippingPerKg, total=goods+fee+shipping;
+        current={yuan,rate,fee,weight,shipping,goods,total};
+        document.getElementById('goods').textContent=euro(goods);
+        document.getElementById('feeOut').textContent=euro(fee);
+        document.getElementById('shipOut').textContent=euro(shipping);
+        document.getElementById('weightOut').textContent=weight.toLocaleString('de-DE')+' кг';
+        const totalEl=document.getElementById('total'); totalEl.textContent=euro(total); totalEl.classList.remove('bump'); void totalEl.offsetWidth; totalEl.classList.add('bump');
+      }
+      ids.forEach(id=>el[id].addEventListener('input',calculate));
+      document.getElementById('copyOrder').addEventListener('click', async()=>{
+        const c=current;
+        const msg=`SWIT — расчёт заказа\nЦена товара: ¥${c.yuan.toFixed(2)}\nКурс: €${c.rate}\nТовар: ${euro(c.goods)}\nКомиссия: ${euro(c.fee)}\nВес посылки: ${c.weight} кг\nДоставка для предварительного расчёта: ${c.weight} кг × 17 € = ${euro(c.shipping)}\nВажно: точная стоимость зависит от страны назначения и уточняется в Telegram.\nИТОГО: ${euro(c.total)}`;
+        const status=document.getElementById('copyStatus');
+        try{await navigator.clipboard.writeText(msg);status.textContent='Расчёт скопирован. Теперь его можно отправить в чат SWIT.';}
+        catch(e){status.textContent=msg;}
+      });
+      calculate();
+
+      const orderForm=document.getElementById('orderForm');
+      orderForm.addEventListener('submit',async event=>{
+        event.preventDefault();
+        const val=id=>document.getElementById(id).value.trim();
+        const status=document.getElementById('formStatus');
+        const button=document.getElementById('submitOrder');
+        const payload={name:val('customerName'),telegram:val('telegramUsername').replace(/^@/,''),country:val('country'),platform:val('platform'),link:val('productLink'),quantity:val('quantity'),sizeColor:val('sizeColor'),weight:val('estimatedWeight'),extra:val('extra')};
+        button.disabled=true; button.textContent='Отправляем…'; status.textContent='Отправляем заявку менеджеру SWIT…';
+        try{
+          const response=await fetch('/api/order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+          const result=await response.json();
+          if(!response.ok) throw new Error(result.error||'Не удалось отправить заявку');
+          status.textContent='Заявка отправлена! Мы свяжемся с тобой в Telegram.';
+          orderForm.reset();
+        }catch(error){status.textContent='Не получилось отправить заявку: '+error.message+'. Попробуй позже или напиши @SWITSELLER напрямую.';}
+        finally{button.disabled=false;button.textContent='Отправить заявку ↗';}
+      });
+    })();
+  </script>
+</body>
+</html>
